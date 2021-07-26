@@ -1,0 +1,41 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Image Slider</title>
+    <link href="img/cats3.png" rel="icon" type="image/png" sizes="16x16"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<header>
+    <h1>Image Slider</h1>
+</header>
+<div class="slider-container">
+    <div class="slide active" style="background-image: url(img/catpexels1.jpg)"></div>
+    <div class="slide" style="background-image:url(img/catpexels2.jpg)"></div>
+    <div class="slide" style="background-image: url(img/dogpexels.jpg)"></div>
+    <div class="slide" style="background-image: url(img/dogpexels5.jpg)"></div>
+    <div class="slide" style="background-image:url(img/dogpexels8.jpg)"></div>
+
+    <button id="left" class="arrow left-arrow">
+        <i class="fas fa-arrow-left"></i>
+    </button>
+
+    <button id="right" class="arrow right-arrow">
+        <i class="fas fa-arrow-right"></i>
+    </button>
+
+    <div class="dotsbox" style="text-align:center">
+        <span class="dot active"  onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+        <span class="dot" onclick="currentSlide(5)"></span>
+    </div>
+
+</div>
+</body>
+<script src="js/app.js" type="text/javascript"></script>
+</html>
